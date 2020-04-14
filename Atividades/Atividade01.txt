@@ -1,77 +1,720 @@
+Professor, nao estava em casa no momento que fiz essa atividade, então usei a internet de meu amigo, que é uma privada. A minha é da claro, mas não vou fazer de novo.
+
 1. Verificar o endereçamento de um host.
 
 a) Abra o Prompt de Comando no Windows.
+Sim
 
 b) Execute o comando ipconfig. Quais os endereços IPs da sua estação, da máscara de rede e do gateway padrão?
+Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.0.109
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+Gateway Padrão. . . . . . . . . . . . . . . : 192.168.0.1
 
 c) Calcule os endereços de rede IPv4 a partir do seu endereço IP da máscara de rede.
+Starting IP Address	Ending IP Address	Subnet Mask
+Class A	10.0.0.0	10.255.255.255	255.0.0.0
+Class B	172.16.0.0	172.31.255.255	255.255.0.0
+Class C	192.168.0.0	192.168.255.255	255.255.255.0
+Address:	192.168.0.109	11000000.10101000.00000000.   01101101
+Netmask:	255.255.255.0 = 24	11111111.11111111.11111111.   00000000
+Wildcard:	0.0.0.255	00000000.00000000.00000000.   11111111
+Network:	192.168.0.0	11000000.10101000.00000000.   00000000	(Class C)
+Broadcast:	192.168.0.255	11000000.10101000.00000000.   11111111
+HostMin:	192.168.0.1	11000000.10101000.00000000.   00000001
+HostMax:	192.168.0.254	11000000.10101000.00000000.   11111110
+Hosts/Net:	254	( RFC-1918 Private Internet Address. )
 
 d) Execute o comando ipconfig/all. Quais as informações foram apresentadas a mais?
+Endereço fisico, DHCP, Configuraçao automatica, proxy, rotiamento de ip, tipo de nó, sufixo dns primario, descriçao de connections, IAID de DHCPv6, NetBIOS em Tcpip.
 
 e) Execute o comando ipconfig/release *Con*. Quai foi o resultado?
+Nenhuma operação pode ser executada em Local Area Connection* 2 enquanto a
+mídia estiver desconectada.
+Nenhuma operação pode ser executada em Local Area Connection* 4 enquanto a
+mídia estiver desconectada.
+Nenhuma operação pode ser executada em Bluetooth Network Connection enquanto a
+mídia estiver desconectada.
 
 f) Execute o comando ipconfig/renew. Qual foi o resultado?
+Nenhuma operação pode ser executada em Ethernet enquanto a
+mídia estiver desconectada.
+Nenhuma operação pode ser executada em Local Area Connection* 2 enquanto a
+mídia estiver desconectada.
+Nenhuma operação pode ser executada em Local Area Connection* 4 enquanto a
+mídia estiver desconectada.
 
 g) Execute o comando ipconfig/displaydns. Quai foi o resultado?
+ link.wacom.com
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : link.wacom.com
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 2346
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 104.130.29.173
+
+
+    ead.iesb.br
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : ead.iesb.br
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 62332
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 186.251.61.44
+
+
+    online.iesb.br
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : online.iesb.br
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 58528
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 186.251.61.196
+
+
+    aonline.iesb.br
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : aonline.iesb.br
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 61785
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 186.251.61.196
+
+
+    www.iesb.br
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : www.iesb.br
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 62290
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 54.174.194.96
+
+
+    imgur.com
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : imgur.com
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 18602
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 151.101.44.193
+
+
+    biblioteca.iesb.br
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : biblioteca.iesb.br
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 56765
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 186.251.61.193
+
+
+    apps.iesb.br
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : apps.iesb.br
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 63788
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 186.251.61.241
+
+
+    bam.nr-data.net
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : bam.nr-data.net
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 50075
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 162.247.242.21
+
+
+     Nome do Registro. . . . . . . . . . . . . : bam.nr-data.net
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 50075
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 162.247.242.20
+
+
+     Nome do Registro. . . . . . . . . . . . . : bam.nr-data.net
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 50075
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 162.247.242.19
+
+
+     Nome do Registro. . . . . . . . . . . . . : bam.nr-data.net
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 50075
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 162.247.242.18
+
+
+    github.githubassets.com
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : github.githubassets.com
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 534
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 185.199.109.154
+
+
+     Nome do Registro. . . . . . . . . . . . . : github.githubassets.com
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 534
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 185.199.108.154
+
+
+     Nome do Registro. . . . . . . . . . . . . : github.githubassets.com
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 534
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 185.199.111.154
+
+
+     Nome do Registro. . . . . . . . . . . . . : github.githubassets.com
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 534
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 185.199.110.154
 
 h) Execute o comando ipconfig/flushdns em seguida o comando ipconfig/displaydns. Quai foi o resultado?
+Configuração de IP do Windows
 
+    aka.ms
+    ----------------------------------------
+    Nenhum registro do tipo AAAA
+
+
+    aka.ms
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : aka.ms
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 5
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 104.108.113.182
+
+
+    catalog.gamepass
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : catalog.gamepass.com
+     Tipo de Registro. . . . . . . . . . . . . : 5
+     Tempo de Vida . . . . . . . . . . . . . . : 15
+     Comprimento dos Dados . . . . . . . . . . : 8
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro CNAME . . . . . . . . . . . . . . : catalog.gamepass.com.edgesuite.net
+
+
+     Nome do Registro. . . . . . . . . . . . . : catalog.gamepass.com.edgesuite.net
+     Tipo de Registro. . . . . . . . . . . . . : 5
+     Tempo de Vida . . . . . . . . . . . . . . : 15
+     Comprimento dos Dados . . . . . . . . . . : 8
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro CNAME . . . . . . . . . . . . . . : a1992.dscd.akamai.net
+
+
+     Nome do Registro. . . . . . . . . . . . . : a1992.dscd.akamai.net
+     Tipo de Registro. . . . . . . . . . . . . : 28
+     Tempo de Vida . . . . . . . . . . . . . . : 15
+     Comprimento dos Dados . . . . . . . . . . : 16
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro AAAA. . . . . . . . . . . . . . . : 2600:1403:2::76d6:a0bb
+
+
+     Nome do Registro. . . . . . . . . . . . . : a1992.dscd.akamai.net
+     Tipo de Registro. . . . . . . . . . . . . : 28
+     Tempo de Vida . . . . . . . . . . . . . . : 15
+     Comprimento dos Dados . . . . . . . . . . : 16
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro AAAA. . . . . . . . . . . . . . . : 2600:1403:2::76d6:a0c2
+
+
+    catalog.gamepass.com
+    ----------------------------------------
+     Nome do Registro. . . . . . . . . . . . . : catalog.gamepass.com
+     Tipo de Registro. . . . . . . . . . . . . : 5
+     Tempo de Vida . . . . . . . . . . . . . . : 4
+     Comprimento dos Dados . . . . . . . . . . : 8
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro CNAME . . . . . . . . . . . . . . : catalog.gamepass.com.edgesuite.net
+
+
+     Nome do Registro. . . . . . . . . . . . . : catalog.gamepass.com.edgesuite.net
+     Tipo de Registro. . . . . . . . . . . . . : 5
+     Tempo de Vida . . . . . . . . . . . . . . : 4
+     Comprimento dos Dados . . . . . . . . . . : 8
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro CNAME . . . . . . . . . . . . . . : a1992.dscd.akamai.net
+
+
+     Nome do Registro. . . . . . . . . . . . . : a1992.dscd.akamai.net
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 4
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 23.221.72.138
+
+
+     Nome do Registro. . . . . . . . . . . . . : a1992.dscd.akamai.net
+     Tipo de Registro. . . . . . . . . . . . . : 1
+     Tempo de Vida . . . . . . . . . . . . . . : 4
+     Comprimento dos Dados . . . . . . . . . . : 4
+    Seção. . . . . . . . . . . . . . . . . . . : Resposta
+    Registro (Host). . . . . . . . . . . . . . : 23.221.72.136
 
 
 2. Testar a conectividade física entre dois hosts.
 
 a) Execute o comando ping seguido do endereço IP da sua estação, identificado no item anterior. Qual foi o resultado?
+Disparando 192.168.0.109 com 32 bytes de dados:
+Resposta de 192.168.0.109: bytes=32 tempo<1ms TTL=128
+Resposta de 192.168.0.109: bytes=32 tempo<1ms TTL=128
+Resposta de 192.168.0.109: bytes=32 tempo<1ms TTL=128
+Resposta de 192.168.0.109: bytes=32 tempo<1ms TTL=128
+
+Estatísticas do Ping para 192.168.0.109:
+    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de
+             perda),
+Aproximar um número redondo de vezes em milissegundos:
+    Mínimo = 0ms, Máximo = 0ms, Média = 0ms
 
 b) Execute novamente o comando anterior acrescentando o parametro -t. Qual foi o resultado?
+Resposta de 192.168.0.109: bytes=32 tempo<1ms TTL=128 infinitamente.
 
 c) Execute o comando ping seguido do endereço de loopback. Qual foi o resultado?
+Testado com esse Ip
+Disparando 127.0.0.1 com 32 bytes de dados:
+Resposta de 127.0.0.1: bytes=32 tempo<1ms TTL=128
+Resposta de 127.0.0.1: bytes=32 tempo<1ms TTL=128
+Resposta de 127.0.0.1: bytes=32 tempo<1ms TTL=128
+Resposta de 127.0.0.1: bytes=32 tempo<1ms TTL=128
 
-d) Execute o comando ping seguido do endereço do gateway padrão. Qual foi o resultado? 
+Estatísticas do Ping para 127.0.0.1:
+    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de
+             perda),
+Aproximar um número redondo de vezes em milissegundos:
+    Mínimo = 0ms, Máximo = 0ms, Média = 0ms
+
+d) Execute o comando ping seguido do endereço do gateway padrão. Qual foi o resultado?
+Disparando 192.168.0.1 com 32 bytes de dados:
+Resposta de 192.168.0.1: bytes=32 tempo=1ms TTL=64
+Resposta de 192.168.0.1: bytes=32 tempo=2ms TTL=64
+Resposta de 192.168.0.1: bytes=32 tempo=1ms TTL=64
+Resposta de 192.168.0.1: bytes=32 tempo=2ms TTL=64
+
+Estatísticas do Ping para 192.168.0.1:
+    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de
+             perda),
+Aproximar um número redondo de vezes em milissegundos:
+    Mínimo = 1ms, Máximo = 2ms, Média = 1ms
 
 e) Execute o comando ping seguido do nome da sua estação. Qual foi o resultado?
+Disparando DESKTOP-7HGGNTF [fe80::d4a6:66ae:a67b:4eb5%9] com 32 bytes de dados:
+Resposta de fe80::d4a6:66ae:a67b:4eb5%9: tempo=2ms
+Resposta de fe80::d4a6:66ae:a67b:4eb5%9: tempo<1ms
+Resposta de fe80::d4a6:66ae:a67b:4eb5%9: tempo<1ms
+Resposta de fe80::d4a6:66ae:a67b:4eb5%9: tempo<1ms
+
+Estatísticas do Ping para fe80::d4a6:66ae:a67b:4eb5%9:
+    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de
+             perda),
+Aproximar um número redondo de vezes em milissegundos:
+    Mínimo = 0ms, Máximo = 2ms, Média = 0ms
 
 f) Execute o comando ping seguido do host www.iesb.br. Qual foi o resultado?
+Disparando www.iesb.br [54.174.194.96] com 32 bytes de dados:
+Resposta de 54.174.194.96: bytes=32 tempo=146ms TTL=97
+Resposta de 54.174.194.96: bytes=32 tempo=145ms TTL=97
+Resposta de 54.174.194.96: bytes=32 tempo=146ms TTL=97
+Resposta de 54.174.194.96: bytes=32 tempo=149ms TTL=97
+
+Estatísticas do Ping para 54.174.194.96:
+    Pacotes: Enviados = 4, Recebidos = 4, Perdidos = 0 (0% de
+             perda),
+Aproximar um número redondo de vezes em milissegundos:
+    Mínimo = 145ms, Máximo = 149ms, Média = 146ms
 
 g) Execute o comando ping seguido do host intranet.iesb.br. Qual foi o resultado?
-
+A solicitação ping não pôde encontrar o host intranet.iesb.br. Verifique o nome e tente
+novamente.
 
 
 3. Resolver nomes dos hosts para achar os endereços IP.
 
 a) Execute o comando nslookup seguido do endereço IP da sua estação. Qual foi o resultado?
+Servidor:  UnKnown
+Address:  192.168.0.1
+
+*** UnKnown não encontrou 192.168.0.109: Non-existent domain
 
 b) Execute o comando nslookup seguido do nome da sua estação. Qual foi o resultado?
+Servidor:  UnKnown
+Address:  192.168.0.1
+
+*** UnKnown não encontrou DESKTOP-7HGGNTF: Non-existent domain
 
 c) Execute o comando nslookup seguido do host www.iesb.br. Qual foi o resultado?
+Servidor:  UnKnown
+Address:  192.168.0.1
+
+Não é resposta autoritativa:
+Nome:    www.iesb.br
+Address:  54.174.194.96
+
+porem, se eu botar -iq=ns aparece:
+
+Servidor:  UnKnown
+Address:  192.168.0.1
+
+iesb.br
+        primary name server = dns3.iesb.br
+        responsible mail addr = rede.iesb.br
+        serial  = 2020033121
+        refresh = 3600 (1 hour)
+        retry   = 900 (15 mins)
+        expire  = 1209600 (14 days)
+        default TTL = 3600 (1 hour)
 
 d) Execute o comando nslookup seguido do host intranet.iesb.br. Qual foi o resultado?
+Servidor:  UnKnown
+Address:  192.168.0.1
+
+*** UnKnown não encontrou intranet.iesb.br: Non-existent domain
 
 
 
 4. Verificar rotas entre dois hosts.
 
-a) Execute o comando tracert seguido do endereço IP da sua estação. Quantos saltos foram realizados? O destino foi alcançado? 
+a) Execute o comando tracert seguido do endereço IP da sua estação. Quantos saltos foram realizados? O destino foi alcançado?
+1, Sim.
 
 b) Execute o comando tracert seguido do endereço do gateway padrão. Quantos saltos foram realizados? O destino foi alcançado?
+1, Sim.
 
 c) Execute o comando tracert www.iesb.br para verificar o roteamento de pacotes. Qual foi o resultado? O destino foi alcançado?
+Rastreando a rota para www.iesb.br [54.174.194.96]
+com no máximo 30 saltos:
+
+  1     3 ms     1 ms     1 ms  192.168.0.1
+  2     3 ms     2 ms     1 ms  172.25.50.2
+  3     2 ms     3 ms     2 ms  172.16.20.253
+  4     4 ms     3 ms     3 ms  172.16.30.149
+  5     2 ms     6 ms     3 ms  45.165.196.17
+  6     6 ms     5 ms     6 ms  45.165.196.249
+  7     4 ms     3 ms     3 ms  200-146-236-018.xf-static.ctbcnetsuper.com.br [200.146.236.18]
+  8     3 ms     6 ms     3 ms  100.126.4.134
+  9    20 ms    18 ms    21 ms  100.126.0.133
+ 10    20 ms    21 ms    20 ms  ae3-0.ptx-b.spo-piaf.algartelecom.com.br [170.84.32.6]
+ 11   124 ms   121 ms   122 ms  et-11-0-5-0.monet.border-b.mia.algartelecom.com.br [168.197.23.145]
+ 12   149 ms   120 ms   121 ms  99.82.176.112
+ 13   122 ms   121 ms   122 ms  52.93.37.83
+ 14   122 ms   119 ms   121 ms  52.93.37.66
+ 15     *        *        *     Esgotado o tempo limite do pedido.
+ 16     *        *        *     Esgotado o tempo limite do pedido.
+ 17     *        *        *     Esgotado o tempo limite do pedido.
+ 18     *        *        *     Esgotado o tempo limite do pedido.
+ 19     *        *        *     Esgotado o tempo limite do pedido.
+ 20   145 ms   152 ms   145 ms  54.239.42.192
+ 21     *        *        *     Esgotado o tempo limite do pedido.
+ 22     *        *        *     Esgotado o tempo limite do pedido.
+ 23     *        *        *     Esgotado o tempo limite do pedido.
+ 24     *        *        *     Esgotado o tempo limite do pedido.
+ 25     *        *        *     Esgotado o tempo limite do pedido.
+ 26     *        *        *     Esgotado o tempo limite do pedido.
+ 27     *        *        *     Esgotado o tempo limite do pedido.
+ 28     *        *        *     Esgotado o tempo limite do pedido.
+ 29     *        *        *     Esgotado o tempo limite do pedido.
+ 30     *        *        *     Esgotado o tempo limite do pedido.
+
+Rastreamento concluído.
+Sim.
 
 d) Execute o comando tracert intranet.iesb.br. Qual foi o resultado? O destino foi alcançado?
+Não é possível resolver o nome do sistema de destino intranet.iesb.br.
+Nao
 
 e) Execute o comando tracert helpdesk.iesb.br. Qual foi o resultado? O destino foi alcançado?
+Rastreando a rota para helpdesk.iesb.br [186.251.61.127]
+com no máximo 30 saltos:
 
+  1     4 ms     1 ms     2 ms  192.168.0.1
+  2     7 ms     3 ms     3 ms  172.25.50.2
+  3     2 ms     2 ms     4 ms  172.16.20.253
+  4     5 ms    13 ms     6 ms  172.16.30.173
+  5     3 ms     2 ms     3 ms  45.165.196.17
+  6     2 ms     2 ms     3 ms  217.36.125.189.static.impsat.net.br [189.125.36.217]
+  7    11 ms    10 ms    15 ms  214.255.125.189.static.impsat.net.br [189.125.255.214]
+  8    17 ms    10 ms    10 ms  45.171.103.234
+  9     *        *        *     Esgotado o tempo limite do pedido.
+ 10     *        *        *     Esgotado o tempo limite do pedido.
+ 11     *        *        *     Esgotado o tempo limite do pedido.
+ 12     *        *        *     Esgotado o tempo limite do pedido.
+ 13     *        *        *     Esgotado o tempo limite do pedido.
+ 14     *        *        *     Esgotado o tempo limite do pedido.
+ 15     *        *        *     Esgotado o tempo limite do pedido.
+ 16     *        *        *     Esgotado o tempo limite do pedido.
+ 17     *        *        *     Esgotado o tempo limite do pedido.
+ 18     *        *        *     Esgotado o tempo limite do pedido.
+ 19     *        *        *     Esgotado o tempo limite do pedido.
+ 20     *        *        *     Esgotado o tempo limite do pedido.
+ 21     *        *        *     Esgotado o tempo limite do pedido.
+ 22     *        *        *     Esgotado o tempo limite do pedido.
+ 23     *        *        *     Esgotado o tempo limite do pedido.
+ 24     *        *        *     Esgotado o tempo limite do pedido.
+ 25     *        *        *     Esgotado o tempo limite do pedido.
+ 26     *        *        *     Esgotado o tempo limite do pedido.
+ 27     *        *        *     Esgotado o tempo limite do pedido.
+ 28     *        *        *     Esgotado o tempo limite do pedido.
+ 29     *        *        *     Esgotado o tempo limite do pedido.
+ 30     *        *        *     Esgotado o tempo limite do pedido.
+
+Rastreamento concluído.
 
 
 5. Verificar as conexões estabelecidas pelo host.
 
 a) Execute o comando netstat. Qual foi o resultado?
+Conexões ativas
+
+  Proto  Endereço local         Endereço externo       Estado
+  TCP    127.0.0.1:52977        DESKTOP-7HGGNTF:53001  ESTABLISHED
+  TCP    127.0.0.1:53001        DESKTOP-7HGGNTF:52977  ESTABLISHED
+  TCP    127.0.0.1:53302        DESKTOP-7HGGNTF:53536  ESTABLISHED
+  TCP    127.0.0.1:53536        DESKTOP-7HGGNTF:53302  ESTABLISHED
+  TCP    192.168.0.109:52874    52.179.224.121:https   ESTABLISHED
+  TCP    192.168.0.109:52935    ce-in-f188:5228        ESTABLISHED
+  TCP    192.168.0.109:53060    a184-51-192-11:https   CLOSE_WAIT
+  TCP    192.168.0.109:60033    162.159.129.235:https  ESTABLISHED
+  TCP    192.168.0.109:60039    162.159.136.234:https  ESTABLISHED
+  TCP    192.168.0.109:60133    lb-140-82-114-26-iad:https  ESTABLISHED
+  TCP    192.168.0.109:60186    lb-140-82-113-26-iad:https  ESTABLISHED
+  TCP    192.168.0.109:60231    162.159.135.233:https  ESTABLISHED
+  TCP    192.168.0.109:60250    whatsapp-cdn-shv-01-gru1:https  ESTABLISHED
+  TCP    192.168.0.109:60257    162.159.129.232:https  ESTABLISHED
+  TCP    192.168.0.109:60279    185.199.111.154:https  ESTABLISHED
+  TCP    192.168.0.109:60280    ec2-13-236-229-21:https  ESTABLISHED
+  TCP    192.168.0.109:60281    ec2-13-236-229-21:https  ESTABLISHED
 
 b) Execute o comando netstat -n. Qual foi o resultado? Notou algo diferente?
+Conexões ativas
+
+  Proto  Endereço local         Endereço externo       Estado
+  TCP    127.0.0.1:52977        127.0.0.1:53001        ESTABLISHED
+  TCP    127.0.0.1:53001        127.0.0.1:52977        ESTABLISHED
+  TCP    127.0.0.1:53302        127.0.0.1:53536        ESTABLISHED
+  TCP    127.0.0.1:53536        127.0.0.1:53302        ESTABLISHED
+  TCP    192.168.0.109:52874    52.179.224.121:443     ESTABLISHED
+  TCP    192.168.0.109:52935    64.233.190.188:5228    ESTABLISHED
+  TCP    192.168.0.109:53060    184.51.192.11:443      CLOSE_WAIT
+  TCP    192.168.0.109:60033    162.159.129.235:443    ESTABLISHED
+  TCP    192.168.0.109:60039    162.159.136.234:443    ESTABLISHED
+  TCP    192.168.0.109:60133    140.82.114.26:443      ESTABLISHED
+  TCP    192.168.0.109:60186    140.82.113.26:443      ESTABLISHED
+  TCP    192.168.0.109:60250    157.240.222.60:443     ESTABLISHED
+  TCP    192.168.0.109:60257    162.159.129.232:443    ESTABLISHED
+  TCP    192.168.0.109:60284    104.117.16.77:443      ESTABLISHED
+  TCP    192.168.0.109:60286    185.199.111.154:443    ESTABLISHED
+  TCP    192.168.0.109:60287    13.236.229.21:443      ESTABLISHED
+  TCP    192.168.0.109:60288    13.236.229.21:443      ESTABLISHED
+  TCP    192.168.0.109:60289    157.240.222.60:443     ESTABLISHED
+  No anterior tem o meu wpp pois a pagina ta aberta
 
 c) Execute o comando netstat -na. Qual foi o resultado? Notou algo diferente?
+Conexões ativas
+
+  Proto  Endereço local         Endereço externo       Estado
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:5040           0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:27036          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49669          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49678          0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:3213         0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:6463         0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:27015        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:27060        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:50000        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:52977        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:52977        127.0.0.1:53001        ESTABLISHED
+  TCP    127.0.0.1:53001        127.0.0.1:52977        ESTABLISHED
+  TCP    127.0.0.1:53301        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:53302        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:53302        127.0.0.1:53536        ESTABLISHED
+  TCP    127.0.0.1:53536        127.0.0.1:53302        ESTABLISHED
+  TCP    192.168.0.109:139      0.0.0.0:0              LISTENING
+  TCP    192.168.0.109:52874    52.179.224.121:443     ESTABLISHED
+  TCP    192.168.0.109:52935    64.233.190.188:5228    ESTABLISHED
+  TCP    192.168.0.109:53060    184.51.192.11:443      CLOSE_WAIT
+  TCP    192.168.0.109:60033    162.159.129.235:443    ESTABLISHED
+  TCP    192.168.0.109:60186    140.82.113.26:443      ESTABLISHED
+  TCP    192.168.0.109:60250    157.240.222.60:443     ESTABLISHED
+  TCP    192.168.0.109:60298    140.82.114.26:443      ESTABLISHED
+  TCP    192.168.0.109:60299    172.217.28.243:443     ESTABLISHED
+  TCP    192.168.0.109:60302    162.159.133.234:443    ESTABLISHED
+  TCP    192.168.0.109:60311    104.117.16.77:443      ESTABLISHED
+  TCP    192.168.0.109:60313    185.199.111.154:443    ESTABLISHED
+  TCP    192.168.0.109:60314    13.236.229.21:443      CLOSE_WAIT
+  TCP    192.168.0.109:60315    13.236.229.21:443      CLOSE_WAIT
+  TCP    [::]:135               [::]:0                 LISTENING
+  TCP    [::]:445               [::]:0                 LISTENING
+  TCP    [::]:49664             [::]:0                 LISTENING
+  TCP    [::]:49665             [::]:0                 LISTENING
+  TCP    [::]:49666             [::]:0                 LISTENING
+  TCP    [::]:49667             [::]:0                 LISTENING
+  TCP    [::]:49668             [::]:0                 LISTENING
+  TCP    [::]:49669             [::]:0                 LISTENING
+  TCP    [::]:49678             [::]:0                 LISTENING
+  UDP    0.0.0.0:500            *:*
+  UDP    0.0.0.0:3702           *:*
+  UDP    0.0.0.0:3702           *:*
+  UDP    0.0.0.0:4500           *:*
+  UDP    0.0.0.0:5050           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5355           *:*
+  UDP    0.0.0.0:27036          *:*
+  UDP    0.0.0.0:52578          *:*
+  UDP    0.0.0.0:54113          *:*
+  UDP    0.0.0.0:54947          *:*
+  UDP    0.0.0.0:63257          *:*
+  UDP    127.0.0.1:1900         *:*
+  UDP    127.0.0.1:10360        *:*
+  UDP    127.0.0.1:10361        *:*
+  UDP    127.0.0.1:44301        *:*
+  UDP    127.0.0.1:49668        *:*
+  UDP    127.0.0.1:49669        *:*
+  UDP    127.0.0.1:49670        *:*
+  UDP    127.0.0.1:54112        *:*
+  UDP    127.0.0.1:65456        *:*
+  UDP    192.168.0.109:137      *:*
+  UDP    192.168.0.109:138      *:*
+  UDP    192.168.0.109:1900     *:*
+  UDP    192.168.0.109:2177     *:*
+  UDP    192.168.0.109:65455    *:*
+  UDP    [::]:500               *:*
+  UDP    [::]:3702              *:*
+  UDP    [::]:3702              *:*
+  UDP    [::]:4500              *:*
+  UDP    [::]:5353              *:*
+  UDP    [::]:5353              *:*
+  UDP    [::]:5353              *:*
+  UDP    [::]:5355              *:*
+  UDP    [::]:54114             *:*
+  UDP    [::1]:1900             *:*
+  UDP    [::1]:65454            *:*
+  UDP    [2804:14c:6586:6cf3::1003]:2177  *:*
+  UDP    [fe80::d4a6:66ae:a67b:4eb5%9]:1900  *:*
+  UDP    [fe80::d4a6:66ae:a67b:4eb5%9]:2177  *:*
+  UDP    [fe80::d4a6:66ae:a67b:4eb5%9]:65453  *:*
 
 d) Execute o comando netstat -nap TCP. Qual foi o resultado? Notou algo diferente?
+Conexões ativas
+
+  Proto  Endereço local         Endereço externo       Estado
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:5040           0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:27036          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49669          0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:49678          0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:3213         0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:6463         0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:27015        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:27060        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:50000        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:52977        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:52977        127.0.0.1:53001        ESTABLISHED
+  TCP    127.0.0.1:53001        127.0.0.1:52977        ESTABLISHED
+  TCP    127.0.0.1:53301        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:53302        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:53302        127.0.0.1:53536        ESTABLISHED
+  TCP    127.0.0.1:53536        127.0.0.1:53302        ESTABLISHED
+  TCP    192.168.0.109:139      0.0.0.0:0              LISTENING
+  TCP    192.168.0.109:52874    52.179.224.121:443     ESTABLISHED
+  TCP    192.168.0.109:52935    64.233.190.188:5228    ESTABLISHED
+  TCP    192.168.0.109:53060    184.51.192.11:443      CLOSE_WAIT
+  TCP    192.168.0.109:60033    162.159.129.235:443    ESTABLISHED
+  TCP    192.168.0.109:60186    140.82.113.26:443      ESTABLISHED
+  TCP    192.168.0.109:60250    157.240.222.60:443     ESTABLISHED
+  TCP    192.168.0.109:60298    140.82.114.26:443      ESTABLISHED
+  TCP    192.168.0.109:60302    162.159.133.234:443    ESTABLISHED
+  TCP    192.168.0.109:60318    162.159.129.233:443    ESTABLISHED
+  TCP    192.168.0.109:60321    23.3.13.26:80          TIME_WAIT
+  TCP    192.168.0.109:60322    23.3.13.26:80          TIME_WAIT
+  TCP    192.168.0.109:60323    23.3.13.26:80          ESTABLISHED
+  TCP    192.168.0.109:60324    23.3.13.26:80          TIME_WAIT
+  TCP    192.168.0.109:60325    23.3.13.26:80          TIME_WAIT
+  TCP    192.168.0.109:60326    23.3.13.26:80          TIME_WAIT
+  TCP    192.168.0.109:60327    23.3.13.26:80          ESTABLISHED
+  TCP    192.168.0.109:60328    23.3.13.26:80          TIME_WAIT
+  TCP    192.168.0.109:60332    52.177.83.224:443      TIME_WAIT
+  TCP    192.168.0.109:60333    185.199.111.154:443    ESTABLISHED
+  TCP    192.168.0.109:60334    52.64.108.95:443       CLOSE_WAIT
+  TCP    192.168.0.109:60335    52.64.108.95:443       CLOSE_WAIT
+  TCP    192.168.0.109:60338    13.107.5.88:443        ESTABLISHED
+  Mostra so o TCP
 
 e) Execute o comando netstat -nap UDP. Qual foi o resultado? Notou algo diferente?
+Conexões ativas
+
+  Proto  Endereço local         Endereço externo       Estado
+  UDP    0.0.0.0:500            *:*
+  UDP    0.0.0.0:3702           *:*
+  UDP    0.0.0.0:3702           *:*
+  UDP    0.0.0.0:4500           *:*
+  UDP    0.0.0.0:5050           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5355           *:*
+  UDP    0.0.0.0:27036          *:*
+  UDP    0.0.0.0:52578          *:*
+  UDP    0.0.0.0:54113          *:*
+  UDP    0.0.0.0:54947          *:*
+  UDP    127.0.0.1:1900         *:*
+  UDP    127.0.0.1:10360        *:*
+  UDP    127.0.0.1:10361        *:*
+  UDP    127.0.0.1:44301        *:*
+  UDP    127.0.0.1:49668        *:*
+  UDP    127.0.0.1:49669        *:*
+  UDP    127.0.0.1:49670        *:*
+  UDP    127.0.0.1:54112        *:*
+  UDP    127.0.0.1:65456        *:*
+  UDP    192.168.0.109:137      *:*
+  UDP    192.168.0.109:138      *:*
+  UDP    192.168.0.109:1900     *:*
+  UDP    192.168.0.109:2177     *:*
+  UDP    192.168.0.109:65455    *:*
+  Mostra so o UDP
 
 f) Abra a página do IESB (www.iesb.br) no navegador. Tente identificar o socket criado através do comando netstat. Qual foi o resultado?
+Infelizmente, nao consegui achar o socket do IESB
