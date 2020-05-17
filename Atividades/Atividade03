@@ -1,0 +1,113 @@
+1. Configurar o VSCode para acessar o GitHub.
+
+a) Abra o aplicativo VSCode.
+
+b) Pressione as teclas Ctrl+Shift+P e selecione o comando Git: Clone. 
+
+c) Preencha a URL https://github.com/SEU-LOGIN/JOD61.git e pressione ENTER para clonar o repositório.
+
+d) Selecione a pasta C:\Users\SEU-LOGIN\Documentos para onde o repositório será clonado.
+
+e) Prossiga acionando a opção Open para abrir a pasta do repositório clonado.
+
+f) Pressione as teclas Ctrl+' para abrir um terminal.
+
+g) Configure o usuário e email do git.
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+
+
+2. Criar um projeto Unit.
+
+a) Abra o aplicativo UnityHub.
+
+b) Na aba Projects, crie um projeto Unity 2018 acionando a opção New.
+
+c) Prossiga atribuindo o template 3D e nome Atividade03 ao projeto.
+
+d) Verifique se a localização do projeto está indicando a pasta JOD061\Atividades. Senão estiver, atualize para o caminho correto (C:\Users\SEU-LOGIN\Documentos\JOD061\Atividades).
+
+e) Crie uma pasta Scripts e uma pasta Prefabs dentro da pasta Assets.
+
+
+
+3. Criar uma cena para um lobby multiplayer.
+
+a) Renomeie a cena SampleScene para LobbyScene.
+
+b) Crie um GameObject vazio com o nome Network Lobby Manager.
+
+c) Adicione ao objeto Network Lobby Manager os componentes Network Lobby Manager e Network Manager HUD.
+
+d) Ligue a cena LobbyScene com a propriedade Lobby Scene do componente Network Lobby Manager.
+
+e) Crie um cubo com o nome Player.
+
+f) Adicione ao objeto Player os componentes Network Identity e Network Transform.
+
+g) Marque a propriedade Local Player Authority no componente Network Identity. Atribua o valor máximo para a propriedade Network Send Rate no componente Network Transform.
+
+h) Crie um Script na pasta Scripts com o nome PlayerController. Ligue o script ao objeto Player.
+
+i) Abra o script PlayerController.cs no VSCode.
+
+j) Faça a classe PlayerController herdar a classe NetworkBehaviour e usar o pacote UnityEngine.Networking.
+
+k) Declare duas variáveis float na classe PlayerController. A primeira deve ser chamar moveSpeed e ser inicializada com o valor 0.2f. A segunda deve se chamar moveRotation e ser inicializada com o valor 20.
+
+public float moveSpeed = 0.2f;
+public float moveRotation = 20;
+
+l) No método Update da classe PlayerController, faça o objeto rotacionar no eixo Y quando for pressionado as setas na horizontal e se movimentar no eixo Z quando for pressionado as setas na vertical.
+
+        if (isLocalPlayer)
+        {
+            transform.Translate(0, 0, Input.GetAxis("Vertical") * moveSpeed);
+            transform.Rotate(0, Input.GetAxis("Horizontal") * moveRotation, 0);
+        }
+
+m) Na Unity, arraste o objeto Player para dentro da pasta Prefabs. Em seguida apague o objeto da cena.
+
+n) Ligue o prefab Player com a propriedade Game Player Prefab do Network Lobby Manager.
+
+
+
+4. Criar uma cena para realizar uma partida multiplayer.
+
+a) Crie uma nova cena com o nome PlayScene salvando na pasta Assets\Scenes.
+
+b) Ligue a cena PlayScene com a propriedade Lobby Scene do componente Network Lobby Manager.
+
+c) Crie um GameObject vazio com o nome Lobby Player.
+
+d) Adicione ao objeto Lobby Player o componentes Network Lobby Player.
+
+e) Arraste o objeto Lobby Player para dentro da pasta Prefabs. Em seguida apague o objeto da cena.
+
+f) Abra a cena LobbyScene, e ligue a cena PlayScene com a propriedade Lobby Scene do componente Network Lobby Manager.
+
+
+
+5. Executar o jogo multiplayer.
+
+a) Adicione as cenas LobbyScene e PlayScene nessa ordem para a geração da build do jogo.
+
+b) Gere uma build do jogo com a resolução 640x480 em modo janela (Windowed). Inicie o jogo no modo servidor.
+
+c) Execute a cena LobbyScene e inicie o jogo no modo cliente.
+
+d) Faça a movimentação do objeto tanto no cliente quanto no servidor e observe o resultado.
+
+e) Pare a execução do jogo.
+
+
+
+6. Versionar o projeto Unity no GitHub.
+
+a) No VSCode, pressione as teclas Ctrl+Shift+G para acessar o painel do Git. Em seguida, clique em Stage All.
+
+b) Efetive o commit acionando a opção Commit All. Não esqueça de por um comentário ao commit (Ex.: Criando o projeto Atividade03). 
+
+c) Envie os arquivos versionados para o git remoto acionando a opção Push. Informe usuário/senha e acione a opção Sign in.
